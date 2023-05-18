@@ -1,0 +1,127 @@
+@import "variables", "reset";
+
+body {
+  width: 100%;
+  background-color: $neutralColor5;
+}
+
+.initial-section {
+  display: block;
+  margin: 5rem auto;
+  width: 90%;
+  height: auto;
+  max-width: 35rem;
+  background-color: $neutralColor4;
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+
+  .star {
+    margin: 2rem 2rem 0.5rem 2rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 70);
+  }
+  .main-header {
+    display: block;
+    margin: 1rem 2rem;
+    color: $neutralColor1;
+    letter-spacing: 0.1rem;
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+  .paragraph {
+    margin: 1rem 2rem;
+    color: $neutralColor2;
+    font-size: 1.5rem;
+  }
+
+  .select-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2.5rem auto 1rem;
+    .digit {
+      color: $neutralColor2;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      background-color: rgb(108, 108, 108);
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $neutralColor1;
+        background-color: $primaryColor;
+        transition: 0.4s;
+      }
+      &:act {
+        color: red;
+      }
+    }
+  }
+
+  .submit-btn {
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: $primaryColor;
+    letter-spacing: 0.2rem;
+    color: $neutralColor1;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: $primaryColor;
+      background-color: $neutralColor1;
+      transition: 0.4s;
+    }
+  }
+}
+
+//
+
+.thank-you {
+  @extend .initial-section;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  .illustration {
+    display: block;
+    max-width: 20rem;
+    max-height: 15rem;
+    padding-top: 2rem;
+    margin: 2rem auto;
+  }
+  .selected-numbers {
+    display: block;
+    margin: 1rem auto;
+    color: $primaryColor;
+    padding: 1rem 2rem;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5rem;
+    font-size: 1.5rem;
+  }
+  .greeting-message {
+    @extend .main-header;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+}
+
+.attribution {
+  display: block;
+  margin: 1rem auto;
+  color: $neutralColor1;
+  text-align: center;
+  font-size: 1.5rem;
+
+  a {
+    text-decoration: none;
+  }
+}

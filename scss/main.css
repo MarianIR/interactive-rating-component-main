@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.initial-section, .thank-you {
+  display: block;
+  margin: 5rem auto;
+  width: 90%;
+  height: auto;
+  max-width: 35rem;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+}
+.initial-section .star, .thank-you .star {
+  margin: 2rem 2rem 0.5rem 2rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(70, 70, 70);
+}
+.initial-section .main-header, .thank-you .main-header, .thank-you .greeting-message {
+  display: block;
+  margin: 1rem 2rem;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.1rem;
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+.initial-section .paragraph, .thank-you .paragraph {
+  margin: 1rem 2rem;
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.5rem;
+}
+.initial-section .select-numbers, .thank-you .select-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2.5rem auto 1rem;
+}
+.initial-section .select-numbers .digit, .thank-you .select-numbers .digit {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(108, 108, 108);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.initial-section .select-numbers .digit:hover, .thank-you .select-numbers .digit:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  transition: 0.4s;
+}
+.initial-section .select-numbers .digit:act, .thank-you .select-numbers .digit:act {
+  color: red;
+}
+.initial-section .submit-btn, .thank-you .submit-btn {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: hsl(25deg, 97%, 53%);
+  letter-spacing: 0.2rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  font-weight: bold;
+}
+.initial-section .submit-btn:hover, .thank-you .submit-btn:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+  transition: 0.4s;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.thank-you .illustration {
+  display: block;
+  max-width: 20rem;
+  max-height: 15rem;
+  padding-top: 2rem;
+  margin: 2rem auto;
+}
+.thank-you .selected-numbers {
+  display: block;
+  margin: 1rem auto;
+  color: hsl(25deg, 97%, 53%);
+  padding: 1rem 2rem;
+  background-color: rgb(80, 80, 80);
+  border-radius: 5rem;
+  font-size: 1.5rem;
+}
+.thank-you .paragraph {
+  text-align: center;
+}
+
+.attribution {
+  display: block;
+  margin: 1rem auto;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.attribution a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
